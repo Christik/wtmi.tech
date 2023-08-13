@@ -1,0 +1,33 @@
+/*=========================
+  About main section
+===========================*/
+
+.about-main-section {
+  &:extend(.section);
+}
+
+.about-main-section__title {
+  &:extend(.h2);
+
+  margin: 3rem 0;
+}
+
+@media @desktop {
+  .about-main-section {
+    overflow: hidden;
+  }
+
+  .about-main-section__bg {
+    top: 50%;
+    left: 95%;
+    width: 65%;
+  }
+
+  .about-main-section__content {
+    width: 56%;
+  }
+}
+
+@media @toDesktop {
+  .about-main-section__bg { display: none; }
+}

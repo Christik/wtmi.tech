@@ -1,0 +1,18 @@
+/*=========================
+  Single slider
+===========================*/
+
+.section-slider {
+  &:extend(.section);
+
+  padding: 0 0 12rem;
+  background-color: @secondary-bg-color;
+}
+
+.single-slider {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 4rem;
+
+  @media @desktop { margin-left: @side-width; }
+}

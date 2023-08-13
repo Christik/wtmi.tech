@@ -1,0 +1,114 @@
+/*=========================
+  Partners section
+===========================*/
+
+.projects-section {
+  &:extend(.section, .section--white);
+
+  padding-bottom: 0;
+}
+
+.projects-section__header {
+  margin-bottom: 5rem;
+
+  @media @desktop {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.projects-section__title {
+  &:extend(.h2);
+  min-width: 34%;
+
+  @media @toDesktop { margin-bottom: 2rem; }
+}
+
+.projects-section__slider {
+  overflow: hidden;
+
+  @media @desktop { padding-left: @side-width; }
+}
+
+/*=========================
+  Nav
+===========================*/
+
+.project-slider-nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  &__counter {
+    font-family: @secondary-font;
+    font-size: 5rem;
+    line-height: .8;
+    padding-top: .2em;
+    margin-left: 2rem;
+    color: @secondary-text-color;
+
+    [data-current] { color: @primary-text-color; }
+  }
+}
+
+/*=========================
+  Partners slider
+===========================*/
+
+.project-slider {
+  position: relative;
+
+  &__wrapper {}
+
+  &__slide { width: auto; }
+}
+
+/*=========================
+  Partner card
+===========================*/
+
+.project-card {
+  position: relative;
+  height: 54rem;
+  width: 110rem;
+
+  @media @toDesktop {
+    height: 27rem;
+    width: 40rem;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__content {
+    &:extend(.base-text, .base-text--small);
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 4rem 2rem @container-inner-padding-left;
+    background: fade(@secondary-bg-color, 90%);
+
+    @media @toDesktop { padding: 1rem @mob-container-padding; }
+  }
+
+  &__title {
+    flex-grow: 1;
+    text-transform: uppercase;
+  }
+
+  &__more {
+    flex-shrink: 0;
+    margin-left: 1em;
+
+    a:extend(.link all) {}
+  }
+}

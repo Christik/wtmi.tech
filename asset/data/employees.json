@@ -1,0 +1,72 @@
+{
+  "list": [
+    {
+      "name": "Ганеева Эльвира Ильгизовна",
+      "status": "Заместитель директора департамента по&nbsp;работе с&nbsp;ПАО&nbsp;НК&nbsp;«Роснефть»",
+      "contacts": [
+        {
+          "label": "Телефон",
+          "value": "(254) 967-2577",
+          "url": "tel:2549672577"
+        },
+        {
+          "label": "E-mail",
+          "value": "info@site.ru",
+          "url": "mailto:info@site.ru"
+        }
+      ]
+    },
+    {
+      "name": "Lorem ipsum dolor",
+      "status": "Condimentum vitae sapien pellentesque",
+      "contacts": [
+        {
+          "label": "Телефон",
+          "value": "(254) 967-2577",
+          "url": "tel:2549672577"
+        },
+        {
+          "label": "E-mail",
+          "value": "info@site.ru",
+          "url": "mailto:info@site.ru"
+        }
+      ]
+    },
+    {
+      "name": "Pellentesque elit ullamcorper",
+      "status": "Montes nascetur ridiculus mus mauris",
+      "contacts": [
+        {
+          "label": "Телефон",
+          "value": "(254) 967-2577",
+          "url": "tel:2549672577"
+        },
+        {
+          "label": "E-mail",
+          "value": "info@site.ru",
+          "url": "mailto:info@site.ru"
+        }
+      ]
+    },
+    {
+      "name": "Elementum nisi quis",
+      "status": "A lacus vestibulum sed arcu non odio euismod"
+    },
+    {
+      "name": "Risus nec feugiat in fermentum",
+      "status": "Quisque sagittis purus sit amet volutpat consequat mauris. Iaculis at erat pellentesque",
+      "contacts": [
+        {
+          "label": "Телефон",
+          "value": "(254) 967-2577",
+          "url": "tel:2549672577"
+        },
+        {
+          "label": "E-mail",
+          "value": "info@site.ru",
+          "url": "mailto:info@site.ru"
+        }
+      ]
+    }
+  ]
+}

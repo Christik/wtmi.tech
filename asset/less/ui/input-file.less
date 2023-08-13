@@ -1,0 +1,35 @@
+/*=========================
+  Input file
+===========================*/
+
+.input-file {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    flex-shrink: 0;
+    content: '';
+    display: block;
+    width: 3.2rem;
+    height: 4.4rem;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url('@{img-path}/file-upload.svg');
+  }
+}
+
+.input-file__input {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.input-file__label {
+  &:extend(.base-text, .base-text--small);
+  &:extend(.link all);
+
+  margin-left: 2.5rem;
+  cursor: pointer;
+}

@@ -1,0 +1,22 @@
+<section class="section-map">
+  <div id="map" class="map"></div>
+</section>
+
+<script>
+  ymaps.ready(function () {
+    const map = new ymaps.Map('map', {
+        center: [55.680072, 37.579115],
+        zoom: 17,
+        controls: []
+    });
+
+    const placemark = new ymaps.Placemark(map.getCenter(), {}, {
+        iconLayout: 'default#image',
+        iconImageHref: './asset/img/pin.png',
+        iconImageSize: [70, 100],
+        iconImageOffset: [-35, -100]
+    });
+
+    map.geoObjects.add(placemark);
+  });
+</script>

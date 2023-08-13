@@ -1,0 +1,20 @@
+/*=========================
+  Page
+===========================*/
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page__footer {
+  margin-top: auto;
+}
+
+@media @toDesktop {
+  .page {
+    padding-top: @mob-header-height;
+    overflow: hidden;
+  }
+}

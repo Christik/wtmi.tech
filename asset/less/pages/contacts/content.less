@@ -1,0 +1,71 @@
+/*=========================
+  Contacts section
+===========================*/
+
+.contacts-section {
+  &:extend(.section);
+
+  background-color: #fafafa;
+}
+
+/*=========================
+  Contacts
+===========================*/
+
+.contacts-section__contacts {
+  display: flex;
+  margin-bottom: 11rem;
+
+  @media @toDesktop {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+
+.contacts-section__contacts-col {
+  @media @desktop { width: 33.33%; }
+}
+
+.contacts-section__phone,
+.contacts-section__email {
+  white-space: nowrap;
+  font-size: 4rem;
+  font-weight: 700;
+
+  @media @toDesktop { font-size: 3rem; }
+}
+
+.contacts-section__phone a { color: @primary-text-color; }
+
+/*=========================
+  Bottom cols
+===========================*/
+
+@media @desktop {
+  .contacts-section__bottom-cols {
+    display: flex;
+  }
+
+  .contacts-section__team {
+    width: 66.66%;
+  }
+}
+
+/*=========================
+  Team
+===========================*/
+
+.team-item {
+  &:extend(.base-text all);
+
+  &:not(:last-child) { margin-bottom: 5rem; }
+
+  @media @desktop {
+    display: flex;
+
+    &__label,
+    &__contacts { width: 50%; }
+  }
+
+  @media @toDesktop { margin-bottom: 11rem; }
+}

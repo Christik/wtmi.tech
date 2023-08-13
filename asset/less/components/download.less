@@ -1,0 +1,75 @@
+/*=========================
+  Download file
+===========================*/
+
+.download-file {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    flex-shrink: 0;
+    content: '';
+    display: block;
+    width: 8rem;
+    height: 11rem;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  &--doc::before {
+    background-image: url('@{img-path}/file-doc.svg');
+  }
+
+  &--pdf::before {
+    background-image: url('@{img-path}/file-pdf.svg');
+  }
+}
+
+.download-file__link {
+  margin-left: 3.6rem;
+}
+
+/*=========================
+  Sizes
+===========================*/
+
+.download-file--size-s {
+  &::before {
+    width: 3.2rem;
+    height: 4.4rem;
+  }
+
+  .download-file__link {
+    margin-left: 2.5rem;
+  }
+}
+
+/*=========================
+  Disabled
+===========================*/
+
+.download-file__popup {
+  &:extend(.popup);
+  &:extend(.base-text);
+  &:extend(.base-text--small);
+
+  top: 100%;
+  left: 5.7rem;
+  max-width: 28rem;
+  transform: translateY(-2rem);
+}
+
+.download-file--disabled {
+  cursor: not-allowed;
+
+  .download-file__link {
+    pointer-events: none;
+  }
+
+  &:hover .download-file__popup {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

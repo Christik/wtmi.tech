@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>Wenzhou TMI</title>
+    <meta name="description" content="">
+
+    <meta property="og:title" content="Wenzhou TMI">
+    <meta property="og:site_name" content="xxx">
+    <meta property="og:url" content="https://xxx">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="./asset/img/preview.png">
+    <meta property="og:image:width" content="600"/>
+    <meta property="og:image:height" content="600"/>
+
+    <link rel="stylesheet" href="./asset/css/lightgallery-bundle.min.css">
+    <link rel="stylesheet" href="./asset/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./asset/css/styles.css">
+
+    <script src="./asset/js/vendor/ls.bgset.min.js"></script>
+    <script src="./asset/js/vendor/lazysizes.min.js"></script>
+    <script>
+        (function(){
+            window.lazySizesConfig = window.lazySizesConfig || {};
+            window.lazySizesConfig.preloadAfterLoad = true;
+        })();
+    </script>
+</head>
+<body>
+	<div class="page">
+		<header class="mob-header">
+		  <div class="container-with-side">
+		    <div class="mob-header__in">
+		      
+		        <img
+		          class="mob-header__logo lazyload"
+		          data-src="./asset/img/logo-compact.svg"
+		          alt="Нефтегазовая техника"
+		        />
+		      
+		
+		      <a class="mob-header__button button button--size-s" href="./order.html">
+		        <span class="button__front">Заказать</span>
+		        <span class="button__hover">Заказать</span>
+		      </a>
+		
+		      <button class="mob-header__burger burger" type="button">
+		        <span>Меню</span>
+		      </button>
+		    </div><!--.mob-header__in-->
+		  </div><!--.container-with-side-->
+		</header><!--.mob-header-->
+		
+		<header class="site-header">
+		  <div class="site-header__in">
+		    <div class="site-header__logo site-logo">
+		      <img
+		        class="site-logo__img lazyload"
+		        data-sizes="auto"
+		        data-srcset="
+		          ./asset/img/site-logo.png 240w,
+		          ./asset/img/site-logo@2x.png 480w"
+		        width="240" height="240"
+		        alt="WTMI"
+		      />
+		      <ul class="site-logo__list">
+		        <li><a href="#">中國人</a></li>
+		        <li><a href="#" class="active">Русский</a></li>
+		        <li><a href="#">English</a></li>
+		      </ul>
+		      <div class="site-logo__current-lang">Ru</div>
+		    </div>
+		    <ul class="site-header__menu main-menu">
+		        <li class="main-menu__item">
+		          <a
+		            class="
+		              main-menu__link
+		                main-menu__link--active
+		            "
+		            href="./index.html"
+		          >
+		            Главная
+		          </a>
+		
+		        </li>
+		        <li class="main-menu__item">
+		          <a
+		            class="
+		              main-menu__link
+		                main-menu__link--inactive
+		            "
+		            href="./services.html"
+		          >
+		            Виды деятельности
+		          </a>
+		
+		            <ul class="main-menu__sub-list">
+		                <li>
+		                  <a
+		                    class="main-menu__sub-link"
+		                    href="./inspection.html"
+		                  >
+		                    Инспекция продукции на производстве
+		                  </a>
+		                </li>
+		                <li>
+		                  <a
+		                    class="main-menu__sub-link"
+		                    href="./expedating.html"
+		                  >
+		                    Экспедайтинг
+		                  </a>
+		                </li>
+		                <li>
+		                  <a
+		                    class="main-menu__sub-link"
+		                    href="./survey-control.html"
+		                  >
+		                    Сюрвейрский контроль
+		                  </a>
+		                </li>
+		                <li>
+		                  <a
+		                    class="main-menu__sub-link"
+		                    href="./certification.html"
+		                  >
+		                    Освидетельствование продукции
+		                  </a>
+		                </li>
+		                <li>
+		                  <a
+		                    class="main-menu__sub-link"
+		                    href="./input-control.html"
+		                  >
+		                    Входной контроль
+		                  </a>
+		                </li>
+		                <li>
+		                  <a
+		                    class="main-menu__sub-link"
+		                    href="./laboratory.html"
+		                  >
+		                    Лаборатория неразрушающего контроля
+		                  </a>
+		                </li>
+		            </ul>
+		        </li>
+		        <li class="main-menu__item">
+		          <a
+		            class="
+		              main-menu__link
+		            "
+		            href="./about.html"
+		          >
+		            О компании
+		          </a>
+		
+		        </li>
+		        <li class="main-menu__item">
+		          <a
+		            class="
+		              main-menu__link
+		            "
+		            href="./career.html"
+		          >
+		            Карьера и вакансии
+		          </a>
+		
+		        </li>
+		        <li class="main-menu__item">
+		          <a
+		            class="
+		              main-menu__link
+		            "
+		            href="./contacts.html"
+		          >
+		            Контакты
+		          </a>
+		
+		        </li>
+		    </ul><!--.site-header__menu-->
+		
+		    <section class="site-header__info">
+		      <p class="site-header__email">
+		        <a href="mailto:info@wtmi.tech">
+		          info@wtmi.tech
+		        </a>
+		      </p>
+		
+		      <p class="site-header__phone">
+		        <a href="tel:+868765432000">
+		          +86 876 5432 000
+		        </a>
+		      </p>
+		    </section><!--.site-header__info-->
+		
+		    <a class="site-header__button button" href="./order.html">
+		      <span class="button__front">Сделать заказ</span>
+		      <span class="button__hover">Сделать заказ</span>
+		    </a>
+		  </div><!--.site-header__in-->
+		</header><!--.site-header-->
+
+		<section class="promo-section">
+		  <div class="container-with-side">
+		    <div class="promo-section__content">
+		      <h1 class="h1 spacer-bottom-s">
+		        Инспекция продукции на&nbsp;производстве
+		      </h1>
+		      <p class="base-text base-text--large spacer-bottom-s">
+		        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		      </p>
+		      <p class="base-text">
+		        <a class="link" href="#">Подробнее</a>
+		      </p>
+		      <div class="rating spacer-top-3xl">
+		        <div class="rating__item rating__item--active"></div>
+		        <div class="rating__item rating__item--active"></div>
+		        <div class="rating__item"></div>
+		        <div class="rating__item"></div>
+		        <div class="rating__item"></div>
+		        <div class="rating__item"></div>
+		      </div>
+		    </div><!--.promo-section__content-->
+		  </div><!--.container-with-side-->
+		
+		  <img
+		    class="promo-section__man lazyload"
+		    data-sizes="auto"
+		    data-srcset="
+		      ./asset/img/promo-man.png 583w,
+		      ./asset/img/promo-man@2x.png 1165w"
+		    alt=""
+		  />
+		</section><!--.promo-section-->
+		<div class="about-section">
+		  <section class="about-section__text about-text-block">
+		    <h2 class="h2 spacer-bottom-s">
+		      Wenzhou TMI &mdash;
+		    </h2>
+		    <p class="base-text">
+		      международная компания, осуществляющая инспекционную и&nbsp;экспертную деятельность для организаций нефтегазовой, энергетической, электротехнической, машиностроительной, строительной отраслей.
+		    </p>
+		  </section><!--.about-text-block-->
+		
+		  <section class="about-section__certificates certificates-block">
+		    <h2 class="caption caption--secondary spacer-bottom-m">
+		      Сертификаты<br/>
+		      международного образца:
+		    </h2>
+		
+		    <ul class="certificates-block__list" data-gallery>
+		      <li
+		        class="certificates-block__item"
+		        data-src="./asset/img/certificates/1.png"
+		      >
+		        <img
+		          class="certificates-block__img lazyload"
+		          data-src="./asset/img/certificates/1.png"
+		          alt=""
+		        />
+		      </li>
+		      <li
+		        class="certificates-block__item"
+		        data-src="./asset/img/certificates/1.png"
+		      >
+		        <img
+		          class="certificates-block__img lazyload"
+		          data-src="./asset/img/certificates/1.png"
+		          alt=""
+		        />
+		      </li>
+		    </ul>
+		  </section><!--.certificates-block-->
+		</div><!--.promo-section-->
+		<section class="partners-section">
+		  <div class="container-with-side">
+		    <h2 class="partners-section__title">Заказчики</h2>
+		
+		    <div class="partners-slider">
+		      <div class="partners-slider__in">
+		        <div class="partners-slider__wrapper swiper-wrapper">
+		            <div class="partners-slider__slide swiper-slide">
+		              <article class="partner-card">
+		                <div class="partner-card__logo">
+		                  <img
+		                    class="lazyload"
+		                    data-src="./asset/img/partners/rina.svg"
+		                    alt="RINA"
+		                  />
+		                </div>
+		                <p class="partner-card__title">
+		                  RINA
+		                </p>
+		                <p class="partner-card__text">
+		                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		                </p>
+		              </article>
+		            </div><!--.partners-slider__slide-->
+		            <div class="partners-slider__slide swiper-slide">
+		              <article class="partner-card">
+		                <div class="partner-card__logo">
+		                  <img
+		                    class="lazyload"
+		                    data-src="./asset/img/partners/sinopec.svg"
+		                    alt="China Sinopec"
+		                  />
+		                </div>
+		                <p class="partner-card__title">
+		                  China Sinopec
+		                </p>
+		                <p class="partner-card__text">
+		                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		                </p>
+		              </article>
+		            </div><!--.partners-slider__slide-->
+		            <div class="partners-slider__slide swiper-slide">
+		              <article class="partner-card">
+		                <div class="partner-card__logo">
+		                  <img
+		                    class="lazyload"
+		                    data-src="./asset/img/partners/maire.svg"
+		                    alt="Maire"
+		                  />
+		                </div>
+		                <p class="partner-card__title">
+		                  Maire
+		                </p>
+		                <p class="partner-card__text">
+		                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+		                </p>
+		              </article>
+		            </div><!--.partners-slider__slide-->
+		            <div class="partners-slider__slide swiper-slide">
+		              <article class="partner-card">
+		                <div class="partner-card__logo">
+		                  <img
+		                    class="lazyload"
+		                    data-src="./asset/img/partners/rina.svg"
+		                    alt="RINA"
+		                  />
+		                </div>
+		                <p class="partner-card__title">
+		                  RINA
+		                </p>
+		                <p class="partner-card__text">
+		                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		                </p>
+		              </article>
+		            </div><!--.partners-slider__slide-->
+		            <div class="partners-slider__slide swiper-slide">
+		              <article class="partner-card">
+		                <div class="partner-card__logo">
+		                  <img
+		                    class="lazyload"
+		                    data-src="./asset/img/partners/sinopec.svg"
+		                    alt="China Sinopec"
+		                  />
+		                </div>
+		                <p class="partner-card__title">
+		                  China Sinopec
+		                </p>
+		                <p class="partner-card__text">
+		                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		                </p>
+		              </article>
+		            </div><!--.partners-slider__slide-->
+		            <div class="partners-slider__slide swiper-slide">
+		              <article class="partner-card">
+		                <div class="partner-card__logo">
+		                  <img
+		                    class="lazyload"
+		                    data-src="./asset/img/partners/maire.svg"
+		                    alt="Maire"
+		                  />
+		                </div>
+		                <p class="partner-card__title">
+		                  Maire
+		                </p>
+		                <p class="partner-card__text">
+		                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+		                </p>
+		              </article>
+		            </div><!--.partners-slider__slide-->
+		        </div><!--.partners-slider__wrapper-->
+		      </div><!--.partners-slider__in-->
+		    
+		      <div class="partners-slider__nav">
+		        <button
+		          class="partners-slider__prev arrow-button arrow-button--prev"
+		          type="button"
+		        >
+		          Назад
+		        </button>
+		    
+		        <button
+		          class="partners-slider__next arrow-button arrow-button--next"
+		          type="button"
+		        >
+		          Вперед
+		        </button>
+		      </div><!--.partners-slider__nav-->
+		    </div><!--.partners-slider-->
+		  </div><!--.container-with-side-->
+		</section><!--.partners-section-->
+		<section class="projects-section">
+		  <div class="container-with-side">
+		    <div class="projects-section__header">
+		      <h2 class="projects-section__title">
+		        Наши проекты
+		      </h2>
+		
+		      <div class="project-slider-nav">
+		        <button
+		          class="project-slider-nav__prev arrow-button arrow-button--prev"
+		          type="button"
+		        >
+		          Назад
+		        </button>
+		
+		        <button
+		          class="project-slider-nav__next arrow-button arrow-button--next"
+		          type="button"
+		        >
+		          Вперед
+		        </button>
+		
+		        <div class="project-slider-nav__counter">
+		          <span data-current>00</span>
+		          /
+		          <span data-total>00</span>
+		        </div>
+		      </div><!--.project-slider-nav-->
+		    </div><!--.projects-section__header-->
+		  </div><!--.container-with-side-->
+		
+		  <div class="projects-section__slider">
+		    <div class="project-slider">
+		      <div class="project-slider__wrapper swiper-wrapper">
+		          <div class="project-slider__slide swiper-slide">
+		            <article class="project-card">
+		              <img
+		                class="project-card__img lazyload"
+		                data-sizes="auto"
+		                data-srcset="
+		                  ./asset/img/projects/amurskij-gpz.jpg 1100w,
+		                  ./asset/img/projects/amurskij-gpz@2x.jpg 2200w"
+		                alt="Амурский ГПЗ"
+		              />
+		              <div class="project-card__content">
+		                <div class="project-card__title">
+		                  Амурский ГПЗ
+		                </div>
+		                <div class="project-card__more">
+		                  <a href="#">Подробнее</a>
+		                </div>
+		              </div>
+		            </article><!--.project-card-->
+		          </div><!--.project-slider__slide-->
+		          <div class="project-slider__slide swiper-slide">
+		            <article class="project-card">
+		              <img
+		                class="project-card__img lazyload"
+		                data-sizes="auto"
+		                data-srcset="
+		                  ./asset/img/projects/severnyj-potok-2.jpg 1100w,
+		                  ./asset/img/projects/severnyj-potok-2@2x.jpg 2200w"
+		                alt="Северный поток 2"
+		              />
+		              <div class="project-card__content">
+		                <div class="project-card__title">
+		                  Северный поток 2
+		                </div>
+		                <div class="project-card__more">
+		                  <a href="#">Подробнее</a>
+		                </div>
+		              </div>
+		            </article><!--.project-card-->
+		          </div><!--.project-slider__slide-->
+		          <div class="project-slider__slide swiper-slide">
+		            <article class="project-card">
+		              <img
+		                class="project-card__img lazyload"
+		                data-sizes="auto"
+		                data-srcset="
+		                  ./asset/img/projects/amurskij-gpz.jpg 1100w,
+		                  ./asset/img/projects/amurskij-gpz@2x.jpg 2200w"
+		                alt="Амурский ГПЗ"
+		              />
+		              <div class="project-card__content">
+		                <div class="project-card__title">
+		                  Амурский ГПЗ
+		                </div>
+		                <div class="project-card__more">
+		                  <a href="#">Подробнее</a>
+		                </div>
+		              </div>
+		            </article><!--.project-card-->
+		          </div><!--.project-slider__slide-->
+		          <div class="project-slider__slide swiper-slide">
+		            <article class="project-card">
+		              <img
+		                class="project-card__img lazyload"
+		                data-sizes="auto"
+		                data-srcset="
+		                  ./asset/img/projects/severnyj-potok-2.jpg 1100w,
+		                  ./asset/img/projects/severnyj-potok-2@2x.jpg 2200w"
+		                alt="Северный поток 2"
+		              />
+		              <div class="project-card__content">
+		                <div class="project-card__title">
+		                  Северный поток 2
+		                </div>
+		                <div class="project-card__more">
+		                  <a href="#">Подробнее</a>
+		                </div>
+		              </div>
+		            </article><!--.project-card-->
+		          </div><!--.project-slider__slide-->
+		      </div><!--.project-slider__wrapper-->
+		    </div><!--.project-slider-->
+		  </div><!--.projects-section__slider-->
+		</section><!--.projects-section-->
+
+		<footer class="site-footer page__footer">
+		    <div class="container-with-side">
+		        <div class="site-footer__header">
+		            <div class="site-footer__header-col">
+		                <img
+		                    class="site-footer__logo lazyload"
+		                    data-sizes="auto"
+		                    data-srcset="
+		                        ./asset/img/logo-inverse.png 130w,
+		                        ./asset/img/logo-inverse@2x.png 262w"
+		                    alt="WTMI"
+		                />
+		            </div>
+		            <div class="site-footer__header-col">
+		                <a class="site-footer__phone" href="tel:+868765432000">
+		                    +86 (876) 5432 000
+		                </a>
+		            </div>
+		            <div class="site-footer__header-col">
+		                <a class="site-footer__email" href="mailto:info@wtmi.tech">
+		                    info@wtmi.tech
+		                </a>
+		            </div>
+		        </div><!--.site-footer__header-->
+		
+		        <div class="site-footer__nav">
+		            <ul class="site-footer__menu">
+		                <li><a href="#">Главная</a></li>
+		                <li><a href="#">Виды деятельности</a></li>
+		                <li><a href="#">О компании</a></li>
+		                <li><a href="#">Карьера и вакансии</a></li>
+		                <li><a href="#">Контакты</a></li>
+		            </ul>
+		            <ul class="site-footer__menu">
+		                <li><a href="#">Инспекция продукции на производстве</a></li>
+		                <li><a href="#">Экспедайтинг</a></li>
+		                <li><a href="#">Сюрвейрский контроль</a></li>
+		                <li><a href="#">Освидетельствование продукции</a></li>
+		                <li><a href="#">Входной контроль</a></li>
+		                <li><a href="#">Лаборатория неразрушающего контроля</a></li>
+		            </ul>
+		        </div><!--.site-footer__nav-->
+		
+		        <div class="site-footer__text">
+		            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent cursus eleifend est eu mollis. Vestibulum nulla libero, fermentum nec ultrices ornare, malesuada tristique urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu vehicula eros. Suspendisse sagittis elementum blandit.
+		        </div>
+		    </div><!--.container-with-side-->
+		</footer><!--.site-footer-->
+	</div><!--.page-->
+
+	<script src="./asset/js/vendor/lightgallery.min.js"></script>
+	<script src="./asset/js/app.js" type="module"></script>
+	
+	    <script
+	        src="./asset/js/pages/main/index.js"
+	        type="module"
+	    ></script>
+</body>
+</html>

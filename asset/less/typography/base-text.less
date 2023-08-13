@@ -1,0 +1,32 @@
+/*=========================
+  Base text
+===========================*/
+
+.base-text {
+  font-size: 3rem;
+  line-height: 1.3;
+
+  p:not(:first-child),
+  ul:not(:first-child),
+  li:not(:first-child) { margin-top: 1.25em; }
+
+  ul {
+    &:extend(.bullet-list all);
+  }
+
+  h1:extend(.h1) { margin-bottom: .5em; }
+  h2:extend(.h2) { margin: 1em 0 .5em; }
+  h3:extend(.h3) { margin: 1.5em 0 .75em; }
+}
+
+.base-text--large {
+  @media @desktop {
+    font-size: 3.5rem;
+    line-height: 1.15;
+  }
+}
+
+.base-text--small {
+  font-size: 2.4rem;
+  line-height: 1.4;
+}

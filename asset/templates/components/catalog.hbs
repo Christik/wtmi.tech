@@ -1,0 +1,42 @@
+<ul class="catalog {{ class }} {{#if isFull }} catalog--full {{/if}}">
+  {{#each list}}
+    <li class="catalog__item" data-category="{{ slug }}">
+      <div class="category {{#if ../isFull }} category--align-top {{/if}}">
+        <div class="category__pic">
+          <img
+            class="lazyload"
+            data-sizes="auto"
+            data-srcset="
+              ./asset/img/catalog/{{ pic }}.png 126w,
+              ./asset/img/catalog/{{ pic }}@2x.png 252w"
+            alt=""
+          />
+        </div>
+
+        <div class="category__content">
+          <p class="category__title">
+            {{{ title }}}
+          </p>
+
+          {{#unless ../isFull}}
+            <a class="category__more" href="./catalog.html?category={{ slug }}">
+              Подробнее
+            </a>
+          {{/unless}}
+
+          {{#if ../isFull}}
+            <ul class="category__list">
+              {{#each list}}
+                <li class="category__list-item">
+                  <a class="category__list-link" href="./product-{{ url }}.html">
+                    {{{ title }}}
+                  </a>
+                </li>
+              {{/each}}
+            </ul>
+          {{/if}}
+        </div>
+      </div>
+    </li>
+  {{/each}}
+</ul>

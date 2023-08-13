@@ -1,0 +1,18 @@
+{{>
+	layouts/head
+	title="Wenzhou TMI"
+	description=""
+}}
+<body>
+	<div class="page">
+		{{> layouts/header menu page='contacts' }}
+
+		{{> pages/contacts/content }}
+		{{> pages/contacts/map }}
+
+		{{> layouts/footer class='page__footer' }}
+	</div><!--.page-->
+
+	{{> layouts/foot script='main' }}
+</body>
+</html>

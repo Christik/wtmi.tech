@@ -1,0 +1,46 @@
+<section class="section-slider">
+  <div class="single-slider">
+    <div class="project-slider">
+      <div class="project-slider__wrapper swiper-wrapper">
+        {{#each list }}
+          <div class="project-slider__slide swiper-slide">
+            <article class="project-card">
+              <img
+                class="project-card__img lazyload"
+                data-sizes="auto"
+                data-srcset="
+                  ./asset/img/projects/{{ slug }}.jpg 1100w,
+                  ./asset/img/projects/{{ slug }}@2x.jpg 2200w"
+                alt="{{ title }}"
+              />
+            </article><!--.project-card-->
+          </div><!--.project-slider__slide-->
+        {{/each}}
+      </div><!--.project-slider__wrapper-->
+    </div><!--.project-slider-->
+  </div><!--.single-slider-->
+
+  <div class="container-with-side">
+    <div class="project-slider-nav">
+      <button
+        class="project-slider-nav__prev arrow-button arrow-button--prev"
+        type="button"
+      >
+        Назад
+      </button>
+
+      <button
+        class="project-slider-nav__next arrow-button arrow-button--next"
+        type="button"
+      >
+        Вперед
+      </button>
+
+      <div class="project-slider-nav__counter">
+        <span data-current>00</span>
+        /
+        <span data-total>00</span>
+      </div>
+    </div><!--.project-slider-nav-->
+  </div><!--.container-width-side-->
+</section><!--.section-slider-->

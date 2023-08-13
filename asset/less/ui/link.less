@@ -1,0 +1,40 @@
+/*=========================
+  Link
+===========================*/
+
+.link {
+  color: @link-color;
+  text-decoration: underline fade(@link-color, 60%);
+  text-underline-offset: .2em;
+  outline: none;
+}
+
+.link--no-underlined {
+  text-decoration: none;
+}
+
+.link--primary {
+  color: @primary-text-color;
+  text-decoration-color: fade(@primary-text-color, 60%);
+}
+
+.link--inverted {
+  color: @secondary-accent-inverted-text-color;
+  text-decoration-color: fade(@secondary-accent-inverted-text-color, 60%);
+}
+
+.link--secondary-inverted {
+  color: @secondary-inverted-text-color;
+  text-decoration-color: fade(@secondary-inverted-text-color, 60%);
+}
+
+.link--accent-inverted {
+  color: @accent-inverted-text-color;
+  text-decoration-color: fade(@accent-inverted-text-color, 60%);
+}
+
+@media (hover: hover) {
+  .link:hover {
+    text-decoration: none;
+  }
+}

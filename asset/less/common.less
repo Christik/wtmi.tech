@@ -1,0 +1,27 @@
+/*=========================
+  Common
+===========================*/
+
+html {
+  font-size: .52vw;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+
+  @media @toDesktop { font-size: 50%; }
+}
+
+body {
+  background-color: @primary-bg-color;
+}
+
+body, button, input, select {
+  font-family: @primary-font;
+  color: @primary-text-color;
+}
+
+a {
+  color: @link-color;
+}

@@ -1,0 +1,46 @@
+/*=========================
+  Tabs nav
+===========================*/
+
+.tabs-nav {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.tabs-nav__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 4rem;
+  padding: .5rem 2rem .6rem;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: @primary-text-color;
+  background: none;
+  border: solid 3px @tertiary-bg-color;
+  cursor: pointer;
+
+  &--active {
+    border-color: transparent;
+    color: @inverted-text-color;
+    background-color: @secondary-bg-color;
+    cursor: default;
+    pointer-events: none;
+  }
+}
+
+@media (hover: hover) {
+  .tabs-nav__button:hover {
+    border-color: @accent-bg-color;
+  }
+}
+
+/*=========================
+  Tabs content
+===========================*/
+
+.tabs-content { display: none;
+  &--active { display: block; }
+}

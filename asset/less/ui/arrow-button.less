@@ -1,0 +1,73 @@
+/*=========================
+  Arrow button
+===========================*/
+
+.arrow-button {
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  overflow: hidden;
+  border: solid 2px @primary-text-color;
+  background: none;
+  text-indent: -1000px;
+  cursor: pointer;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+}
+
+.arrow-button--prev {
+  &::before {
+    transform: translate(-60%, -50%);
+    border-width: 5px 5px 5px 0;
+    border-color: transparent @primary-text-color transparent transparent;
+  }
+}
+
+.arrow-button--next {
+  &::before {
+    transform: translate(-40%, -50%);
+    border-width: 5px 0 5px 5px;
+    border-color: transparent transparent transparent @primary-text-color;
+  }
+}
+
+/*=========================
+  Disabled
+===========================*/
+
+.arrow-button--disabled {
+  opacity: .3;
+  pointer-events: none;
+}
+
+/*=========================
+  Hover
+===========================*/
+
+@media (hover: hover) {
+  .arrow-button { transition: background-color .2s;
+    &::before { transition: border-color .2s; }
+  }
+
+  .arrow-button:hover {
+    background-color: @primary-text-color;
+  }
+
+  .arrow-button--prev:hover::before {
+    border-right-color: @inverted-text-color;
+  }
+
+  .arrow-button--next:hover::before {
+    border-left-color: @inverted-text-color;
+  }
+}
+

@@ -1,0 +1,70 @@
+/*=========================
+  Site Footer
+===========================*/
+
+.site-footer {
+  padding: 8rem 0;
+  color: @inverted-text-color;
+  background: @secondary-inverted-bg-color url('@{img-path}/footer-bg.jpg') no-repeat 50% 50% / cover;
+
+  @media @toDesktop { text-align: center; }
+
+  &__header {
+    display: flex;
+    align-items: center;
+
+    @media @toDesktop { flex-direction: column; }
+  }
+
+  &__header-col {
+    @media @desktop { width: 33%; }
+
+    @media @toDesktop { padding: 1rem 0; }
+  }
+
+  &__logo {
+    display: block;
+    width: 13rem;
+    height: 13rem;
+  }
+
+  &__phone {
+    &:extend(.base-text, .base-text--small);
+
+    color: @inverted-text-color;
+    white-space: nowrap;
+  }
+
+  &__email {
+    &:extend(.base-text, .base-text--small, .link all, .link--secondary-inverted);
+  }
+
+  &__nav {
+    display: flex;
+    margin-top: 7rem;
+  }
+
+  &__menu {
+    &:extend(.base-text, .base-text--small);
+    min-width: 33%;
+
+    @media @toDesktop { width: 100%; }
+
+    a {
+      display: block;
+      padding: .35em 0;
+      color: @inverted-text-color;
+
+      @media (hover: hover) {
+        &:hover { color: @accent-inverted-text-color; }
+      }
+    }
+  }
+
+  &__text {
+    &:extend(.base-text, .base-text--small);
+    margin-top: 20rem;
+
+    @media @toDesktop { margin-top: 7rem; }
+  }
+}

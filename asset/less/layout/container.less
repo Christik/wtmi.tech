@@ -1,0 +1,14 @@
+/*=========================
+  Container
+===========================*/
+
+.container-with-side {
+  position: relative;
+  padding:
+    0 @container-padding-right 0 @container-padding-left;
+
+  @media @toDesktop {
+    padding-left: @mob-container-padding;
+    padding-right: @mob-container-padding;
+  }
+}

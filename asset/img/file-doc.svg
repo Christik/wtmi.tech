@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.4.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 80 110" style="enable-background:new 0 0 80 110;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_00000176042645027033316510000002433804239401558151_);fill:#204985;}
+	.st1{clip-path:url(#SVGID_00000176042645027033316510000002433804239401558151_);fill:#FFFFFF;}
+	.st2{fill:none;}
+	.st3{fill:#FFFFFF;}
+	.st4{font-family:'Montserrat-Bold';}
+	.st5{font-size:20px;}
+</style>
+<g>
+	<defs>
+		<rect id="SVGID_1_" width="80" height="110"/>
+	</defs>
+	<clipPath id="SVGID_00000052102809456354246730000005446309031135893133_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<path style="clip-path:url(#SVGID_00000052102809456354246730000005446309031135893133_);fill:#204985;" d="M74,110H6
+		c-3.3,0-6-2.7-6-6V6c0-3.3,2.7-6,6-6h44.5L80,29.5V104C80,107.3,77.3,110,74,110"/>
+	<path style="clip-path:url(#SVGID_00000052102809456354246730000005446309031135893133_);fill:#FFFFFF;" d="M56.5,29.5H80L50.5,0
+		v23.5C50.5,26.8,53.2,29.5,56.5,29.5"/>
+</g>
+<rect x="16" y="62.3" class="st2" width="48.1" height="22.3"/>
+<text transform="matrix(1 0 0 1 15.9702 79.3066)" class="st3 st4 st5">DOC</text>
+</svg>

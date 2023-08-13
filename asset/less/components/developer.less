@@ -1,0 +1,40 @@
+/*=========================
+  Developer
+===========================*/
+
+.developer {
+  &:extend(.base-text);
+
+  display: flex;
+  align-items: center;
+  color: @inverted-text-color;
+  text-align: left;
+
+  &::before {
+    content: '';
+    flex-shrink: 0;
+    display: block;
+    width: 10rem;
+    height: 10rem;
+    margin-right: 2rem;
+    background-image: url('@{img-path}/uxa.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+  }
+}
+
+.developer__link {
+  &:extend(.link);
+  &:extend(.link--inverted);
+
+  text-transform: uppercase;
+}
+
+@media (hover: hover) {
+  .developer:hover {
+    .developer__link {
+      border-bottom-color: transparent;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+/*=========================
+  Promo section
+===========================*/
+
+.promo-section {
+  &:extend(.section);
+
+  @media @desktop {
+    overflow: hidden;
+    padding-top: 14rem;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 3;
+
+    @media @desktop {
+      width: 53rem;
+      margin-left: auto;
+    }
+  }
+
+  &__man {
+    display: block;
+    position: absolute;
+    left: calc(@container-padding-left + 2rem);
+    bottom: -6rem;
+    width: 58rem;
+
+    @media @toDesktop { display: none; }
+  }
+}

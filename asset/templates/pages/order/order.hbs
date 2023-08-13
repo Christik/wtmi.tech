@@ -1,0 +1,102 @@
+<section class="order-section">
+  <div class="container-with-side">
+    <h1 class="order-section__title">
+      Заказ оборудования
+    </h1>
+
+    <form class="order-section__form order-form">
+      <div class="order-form__body">
+        <div class="order-form__fields">
+          <div class="form-group">
+            <label class="form-group__label form-label">
+              Ваше имя:
+            </label>
+            <input type="text" class="form-field" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-group__label form-label">
+              Номер телефона:
+            </label>
+            <input type="tel" class="form-field" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-group__label form-label">
+              E-mail:
+            </label>
+            <input type="email" class="form-field" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-group__label form-label">
+              Вид услуги или товара:
+            </label>
+            <select class="select">
+              <option value="" selected disabled>Выберите из списка</option>
+              <option value="value 1" data-quiz="#url1">Услуга раз</option>
+              <option value="value 2" data-quiz="#url2">Услуга два</option>
+              <option value="value 3" data-quiz="#url3">Услуга три</option>
+            </select>
+          </div>
+        </div><!--.order-form__fields-->
+
+        <div class="order-form__message form-group">
+          <label class="form-group__label form-label">
+            Дополнительная информация:
+          </label>
+          <textarea
+            class="order-form__message-textarea form-field"
+            placeholder="Введите текст"
+          ></textarea>
+        </div><!--.order-form__message-->
+      </div><!--.order-form__body-->
+
+      <div class="order-form__footer">
+        <div class="order-form__files">
+          <div class="download-file download-file--size-s download-file--doc download-file--disabled">
+            <a
+              class="download-file__link base-text base-text--small link link--primary"
+              href="#"
+            >
+              Скачать опросный лист
+            </a>
+            <p class="download-file__popup">
+              Выберите услугу из&nbsp;списка
+              для&nbsp;скачивания опросного&nbsp;листа
+            </p>
+          </div>
+
+          <div>
+            <div class="input-file">
+              <label class="input-file__label" for="input-file">
+                Прикрепить файл
+              </label>
+              <input type="file" class="input-file__input" id="input-file" />
+            </div>
+            <p class="base-text base-text--small spacer-top-xs">
+              Вы можете прикрепить заполненный опросный лист или ТЗ с&nbsp;параметрами оборудования
+            </p>
+          </div>
+        </div><!--.order-form__files-->
+
+        <button
+          class="order-form__submit button button--secondary"
+          type="submit"
+        >
+					<span class="button__front">Оформить заявку</span>
+					<span class="button__hover">Оформить заявку</span>
+				</button>
+
+        <div class="order-form__agreement checkbox">
+          <input type="checkbox" class="checkbox__input" id="agreement" checked />
+          <label class="checkbox__label" for="agreement">
+            Я согласен на обработку персональных данных
+          </label>
+        </div>
+      </div><!--.order-form__footer-->
+    </form>
+  </div><!--.container-with-side-->
+
+  {{> components/map-bg class='order-section__bg' }}
+</section><!--.order-section-->

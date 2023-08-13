@@ -1,0 +1,56 @@
+/*=========================
+  Checkbox
+===========================*/
+
+.checkbox {
+  position: relative;
+}
+
+.checkbox__input {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0;
+  font-size: 0;
+}
+
+.checkbox__label {
+  &:extend(.base-text all);
+  &:extend(.base-text--small);
+
+  position: relative;
+  display: block;
+  padding: 0 0 0 4rem;
+  cursor: pointer;
+
+  &::before, &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: .6rem;
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+
+  &::before {
+    border: solid 2px @primary-text-color;
+    border-radius: 4px;
+  }
+
+  &::after {
+    opacity: 0;
+    background-image: url('@{img-path}/checkbox.svg');
+    background-position: 60% 50%;
+    background-repeat: no-repeat;
+    background-size: 60% auto;
+  }
+}
+
+/*=========================
+  Checked
+===========================*/
+
+.checkbox__input:checked + .checkbox__label::after {
+  opacity: 1;
+}
+

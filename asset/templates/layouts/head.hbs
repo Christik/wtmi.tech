@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>{{ title }}</title>
+    <meta name="description" content="{{ description }}">
+
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:site_name" content="xxx">
+    <meta property="og:url" content="https://xxx">
+    <meta property="og:description" content="{{ description }}">
+    <meta property="og:image" content="./asset/img/preview.png">
+    <meta property="og:image:width" content="600"/>
+    <meta property="og:image:height" content="600"/>
+
+    <link rel="stylesheet" href="./asset/css/lightgallery-bundle.min.css">
+    <link rel="stylesheet" href="./asset/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./asset/css/styles.css">
+
+    <script src="./asset/js/vendor/ls.bgset.min.js"></script>
+    <script src="./asset/js/vendor/lazysizes.min.js"></script>
+    <script>
+        (function(){
+            window.lazySizesConfig = window.lazySizesConfig || {};
+            window.lazySizesConfig.preloadAfterLoad = true;
+        })();
+    </script>
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=c1f20f88-6011-4813-a1a6-24333288da9c&lang=ru_RU"></script>
+</head>

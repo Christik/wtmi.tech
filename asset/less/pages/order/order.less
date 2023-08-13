@@ -1,0 +1,122 @@
+/*=========================
+  Order section
+===========================*/
+
+.order-section {
+  &:extend(.section);
+}
+
+.order-section__title,
+.order-section__form {
+  position: relative;
+  z-index: 3;
+}
+
+.order-section__title {
+  &:extend(.h2);
+
+  margin-bottom: 4rem;
+}
+
+.order-section__form {
+  max-width: 92rem;
+}
+
+@media @desktop {
+  .order-section {
+    overflow: hidden;
+  }
+
+  .order-section__bg {
+    left: 89%;
+    top: 50%;
+    width: 77%;
+  }
+}
+
+@media @toDesktop {
+  .order-section__title {
+    text-align: center;
+  }
+
+  .order-section__form {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .order-section__bg {
+    display: none;
+  }
+}
+
+/*=========================
+  Order form
+===========================*/
+
+.order-form {
+  position: relative;
+}
+
+.order-form__body {
+  margin-bottom: 2.5rem;
+}
+
+.order-form__fields {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.order-form__files {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-left: 3rem;
+  margin-bottom: 4rem;
+}
+
+.order-form__submit {
+  width: 100%;
+}
+
+.order-form__agreement {
+  margin-top: 2rem;
+  margin-left: 3rem;
+}
+
+@media @desktop {
+  .order-form__body {
+    display: flex;
+    gap: 4rem;
+  }
+
+  .order-form__fields,
+  .order-form__message {
+    width: 50%;
+  }
+
+  .order-form__message {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .order-form__message-textarea {
+    flex-grow: 1;
+  }
+
+  .order-form__footer {
+    width: 50%;
+    padding-right: 2rem;
+  }
+}
+
+@media @toDesktop {
+  .order-form__fields {
+    margin-bottom: 2.5rem;
+  }
+
+  textarea.order-form__message-textarea {
+    height: 15rem;
+  }
+}

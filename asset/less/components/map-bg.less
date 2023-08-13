@@ -1,0 +1,43 @@
+/*=========================
+  Map background
+===========================*/
+
+.map-bg {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  aspect-ratio: 177 / 104;
+  pointer-events: none;
+}
+
+.map-bg__map {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.map-bg__pump {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 7.8%;
+  height: auto;
+  aspect-ratio: 23 /27;
+  background-image: url('@{img-path}/pump.gif');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+
+  &--item-1 {
+    left: 11.5%;
+    top: 55.5%;
+  }
+
+  &--item-2 {
+    left: 23.5%;
+    top: 57%;
+  }
+
+  &--item-3 {
+    left: 17.5%;
+    top: 67%;
+  }
+}

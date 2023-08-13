@@ -1,0 +1,32 @@
+/*=========================
+  About files section
+===========================*/
+
+.about-files-section {
+  &:extend(.section);
+}
+
+/*=========================
+  Presentations
+===========================*/
+
+.presentations {
+  display: flex;
+  gap: 4rem 0;
+}
+
+@media @desktop {
+  .presentations {
+    flex-wrap: wrap;
+  }
+
+  .presentations__item {
+    width: 50%;
+  }
+}
+
+@media @toDesktop {
+  .presentations {
+    flex-direction: column;
+  }
+}

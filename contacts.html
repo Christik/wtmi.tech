@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>Wenzhou TMI</title>
+    <meta name="description" content="">
+
+    <meta property="og:title" content="Wenzhou TMI">
+    <meta property="og:site_name" content="xxx">
+    <meta property="og:url" content="https://xxx">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="./asset/img/preview.png">
+    <meta property="og:image:width" content="600"/>
+    <meta property="og:image:height" content="600"/>
+
+    <link rel="stylesheet" href="./asset/css/lightgallery-bundle.min.css">
+    <link rel="stylesheet" href="./asset/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./asset/css/styles.css">
+
+    <script src="./asset/js/vendor/ls.bgset.min.js"></script>
+    <script src="./asset/js/vendor/lazysizes.min.js"></script>
+    <script>
+        (function(){
+            window.lazySizesConfig = window.lazySizesConfig || {};
+            window.lazySizesConfig.preloadAfterLoad = true;
+        })();
+    </script>
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=c1f20f88-6011-4813-a1a6-24333288da9c&lang=ru_RU"></script>
+</head>
+<body>
+	<div class="page">
+		<header class="mob-header">
+		  <div class="container-with-side">
+		    <div class="mob-header__in">
+		      <a href="./">
+		        <img
+		          class="mob-header__logo lazyload"
+		          data-sizes="auto"
+		          data-srcset="
+		            ./asset/img/site-logo.png 240w,
+		            ./asset/img/site-logo@2x.png 480w"
+		          alt="Нефтегазовая техника"
+		        />
+		      </a>
+		
+		      <a class="mob-header__button button button--size-s" href="./order.html">
+		        <span class="button__front">Заказать</span>
+		        <span class="button__hover">Заказать</span>
+		      </a>
+		
+		      <button class="mob-header__burger burger" type="button">
+		        <span>Меню</span>
+		      </button>
+		    </div><!--.mob-header__in-->
+		  </div><!--.container-with-side-->
+		</header><!--.mob-header-->
+		
+		<header class="site-header">
+		  <div class="site-header__in">
+		    <div class="site-header__logo site-logo">
+		      <img
+		        class="site-logo__img lazyload"
+		        data-sizes="auto"
+		        data-srcset="
+		          ./asset/img/site-logo.png 240w,
+		          ./asset/img/site-logo@2x.png 480w"
+		        width="240" height="240"
+		        alt="WTMI"
+		      />
+		      <ul class="site-logo__list">
+		        <li><a href="#">中國人</a></li>
+		        <li><a href="#" class="active">Русский</a></li>
+		        <li><a href="#">English</a></li>
+		      </ul>
+		      <div class="site-logo__current-lang">Ru</div>
+		    </div>
+		    <ul class="site-header__menu main-menu">
+		        <li class="main-menu__item">
+		          <a
+		            class="
+		              main-menu__link
+		            "
+		            href="./index.html"
+		          >
+		            Главная
+		          </a>
+		
+		        </li>
+		        <li class="main-menu__item">
+		          <a
+		            class="
+		              main-menu__link
+		                main-menu__link--inactive
+		            "
+		            href="./services.html"
+		          >
+		            Виды деятельности
+		          </a>
+		
+		            <ul class="main-menu__sub-list">
+		                <li>
+		                  <a
+		                    class="main-menu__sub-link"
+		                    href="./inspection.html"
+		                  >
+		                    Инспекция продукции на производстве
+		                  </a>
+		                </li>
+		                <li>
+		                  <a
+		                    class="main-menu__sub-link"
+		                    href="./expedating.html"
+		                  >
+		                    Экспедайтинг
+		                  </a>
+		                </li>
+		                <li>
+		                  <a
+		                    class="main-menu__sub-link"
+		                    href="./survey-control.html"
+		                  >
+		                    Сюрвейрский контроль
+		                  </a>
+		                </li>
+		                <li>
+		                  <a
+		                    class="main-menu__sub-link"
+		                    href="./certification.html"
+		                  >
+		                    Освидетельствование продукции
+		                  </a>
+		                </li>
+		                <li>
+		                  <a
+		                    class="main-menu__sub-link"
+		                    href="./input-control.html"
+		                  >
+		                    Входной контроль
+		                  </a>
+		                </li>
+		                <li>
+		                  <a
+		                    class="main-menu__sub-link"
+		                    href="./laboratory.html"
+		                  >
+		                    Лаборатория неразрушающего контроля
+		                  </a>
+		                </li>
+		            </ul>
+		        </li>
+		        <li class="main-menu__item">
+		          <a
+		            class="
+		              main-menu__link
+		            "
+		            href="./about.html"
+		          >
+		            О компании
+		          </a>
+		
+		        </li>
+		        <li class="main-menu__item">
+		          <a
+		            class="
+		              main-menu__link
+		            "
+		            href="./career.html"
+		          >
+		            Карьера и вакансии
+		          </a>
+		
+		        </li>
+		        <li class="main-menu__item">
+		          <a
+		            class="
+		              main-menu__link
+		                main-menu__link--active
+		            "
+		            href="./contacts.html"
+		          >
+		            Контакты
+		          </a>
+		
+		        </li>
+		    </ul><!--.site-header__menu-->
+		
+		    <section class="site-header__info">
+		      <p class="site-header__email">
+		        <a href="mailto:info@wtmi.tech">
+		          info@wtmi.tech
+		        </a>
+		      </p>
+		
+		      <p class="site-header__phone">
+		        <a href="tel:+868765432000">
+		          +86 876 5432 000
+		        </a>
+		      </p>
+		    </section><!--.site-header__info-->
+		
+		    <a class="site-header__button button" href="./order.html">
+		      <span class="button__front">Оставить заявку</span>
+		      <span class="button__hover">Оставить заявку</span>
+		    </a>
+		  </div><!--.site-header__in-->
+		</header><!--.site-header-->
+
+		<section class="contacts-section">
+		  <div class="container-with-side">
+		    <h1 class="h1 spacer-bottom-3xl">Контакты</h1>
+		
+		    <div class="contacts-section__contacts">
+		      <div class="contacts-section__contacts-col">
+		        <p class="form-label spacer-bottom-s">
+		          Тел/факс:
+		        </p>
+		        <p class="contacts-section__phone">
+		          <a href="tel:+868765432000">
+		            +86 (876) 5432 000
+		          </a>
+		        </p>
+		      </div>
+		
+		      <div class="contacts-section__contacts-col">
+		        <p class="form-label spacer-bottom-s">
+		          E-mail:
+		        </p>
+		        <p class="contacts-section__email">
+		          <a class="link" href="mailto:info@wtmi.tech">
+		            info@wtmi.tech
+		          </a>
+		        </p>
+		      </div>
+		
+		      <div class="contacts-section__contacts-col">
+		        <p class="form-label spacer-bottom-s">
+		          Адрес:
+		        </p>
+		        <p class="base-text">
+		          117218, г.&nbsp;Москва, ул.&nbsp;Кржижановского, д.&nbsp;23А
+		        </p>
+		      </div>
+		    </div><!--.contacts-section__contacts-->
+		
+		    <div class="contacts-section__bottom-cols">
+		      <div class="contacts-section__team">
+		        <h2 class="h2 spacer-bottom-2xl">Руководство</h2>
+		
+		        <div class="team-item">
+		          <div class="team-item__label">
+		            Директор
+		          </div>
+		          <div class="team-item__contacts">
+		            Иванов Иван Иванович<br/>
+		            <a class="link link--primary link--no-underlined" href="tel:+79994567000">
+		              +7 999 4567000
+		            </a><br/>
+		            <a class="link" href="mailto:example@mail.com">
+		              example@mail.com
+		            </a>
+		          </div>
+		        </div><!--.team-item-->
+		
+		        <div class="team-item">
+		          <div class="team-item__label">
+		            Руководитель отдела продаж
+		          </div>
+		          <div class="team-item__contacts">
+		            Иванов Иван Иванович<br/>
+		            <a class="link link--primary link--no-underlined" href="tel:+79994567000">
+		              +7 999 4567000
+		            </a><br/>
+		            <a class="link" href="mailto:example@mail.com">
+		              example@mail.com
+		            </a>
+		          </div>
+		        </div><!--.team-item-->
+		
+		        <div class="team-item">
+		          <div class="team-item__label">
+		            Ведущий инженер-конструктор
+		          </div>
+		          <div class="team-item__contacts">
+		            Иванов Иван Иванович<br/>
+		            <a class="link link--primary link--no-underlined" href="tel:+79994567000">
+		              +7 999 4567000
+		            </a><br/>
+		            <a class="link" href="mailto:example@mail.com">
+		              example@mail.com
+		            </a>
+		          </div>
+		        </div><!--.team-item-->
+		      </div><!--.contacts-section__team-->
+		
+		      <form class="contacts-section__order">
+		        <h2 class="h2 spacer-bottom-2xl">Быстрая заявка</h2>
+		
+		        <div class="form-group spacer-bottom-l">
+		          <label class="form-group__label form-label">
+		            Интересующее оборудование или услуги
+		          </label>
+		          <textarea class="form-field" rows="8"></textarea>
+		        </div>
+		
+		        <div class="form-group spacer-bottom-l">
+		          <label class="form-group__label form-label">
+		            Как вас зовут
+		          </label>
+		          <input type="text" class="form-field" />
+		        </div>
+		
+		        <div class="form-group spacer-bottom-l">
+		          <label class="form-group__label form-label">
+		            Телефон или электронная почта
+		          </label>
+		          <input type="text" class="form-field" />
+		        </div>
+		
+		        <div class="form-group spacer-bottom-l">
+		          <label class="form-group__label form-label">
+		            Название компании
+		          </label>
+		          <input type="text" class="form-field" />
+		        </div>
+		
+		        <button class="button button--block" type="submit">
+							<span class="button__front">Отправить</span>
+							<span class="button__hover">Отправить</span>
+						</button>
+		      </form><!--.contacts-section__order-->
+		    </div><!--.contacts-section__bottom-cols-->
+		  </div><!--.container-with-side-->
+		</section><!--.contacts-section-->
+		<section class="section-map">
+		  <div id="map" class="map"></div>
+		</section>
+		
+		<script>
+		  ymaps.ready(function () {
+		    const map = new ymaps.Map('map', {
+		        center: [55.680072, 37.579115],
+		        zoom: 17,
+		        controls: []
+		    });
+		
+		    const placemark = new ymaps.Placemark(map.getCenter(), {}, {
+		        iconLayout: 'default#image',
+		        iconImageHref: './asset/img/pin.png',
+		        iconImageSize: [70, 100],
+		        iconImageOffset: [-35, -100]
+		    });
+		
+		    map.geoObjects.add(placemark);
+		  });
+		</script>
+
+		<footer class="site-footer page__footer">
+		    <div class="container-with-side">
+		        <div class="site-footer__header">
+		            <div class="site-footer__header-col">
+		                <img
+		                    class="site-footer__logo lazyload"
+		                    data-sizes="auto"
+		                    data-srcset="
+		                        ./asset/img/logo-inverse.png 130w,
+		                        ./asset/img/logo-inverse@2x.png 262w"
+		                    alt="WTMI"
+		                />
+		            </div>
+		            <div class="site-footer__header-col">
+		                <a class="site-footer__phone" href="tel:+868765432000">
+		                    +86 (876) 5432 000
+		                </a>
+		            </div>
+		            <div class="site-footer__header-col">
+		                <a class="site-footer__email" href="mailto:info@wtmi.tech">
+		                    info@wtmi.tech
+		                </a>
+		            </div>
+		        </div><!--.site-footer__header-->
+		
+		        <div class="site-footer__nav">
+		            <ul class="site-footer__menu">
+		                <li><a href="#">Главная</a></li>
+		                <li><a href="#">Виды деятельности</a></li>
+		                <li><a href="#">О компании</a></li>
+		                <li><a href="#">Карьера и вакансии</a></li>
+		                <li><a href="#">Контакты</a></li>
+		            </ul>
+		            <ul class="site-footer__menu hidden-to-desktop">
+		                <li><a href="#">Инспекция продукции на производстве</a></li>
+		                <li><a href="#">Экспедайтинг</a></li>
+		                <li><a href="#">Сюрвейрский контроль</a></li>
+		                <li><a href="#">Освидетельствование продукции</a></li>
+		                <li><a href="#">Входной контроль</a></li>
+		                <li><a href="#">Лаборатория неразрушающего контроля</a></li>
+		            </ul>
+		        </div><!--.site-footer__nav-->
+		
+		        <div class="site-footer__text">
+		            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent cursus eleifend est eu mollis. Vestibulum nulla libero, fermentum nec ultrices ornare, malesuada tristique urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu vehicula eros. Suspendisse sagittis elementum blandit.
+		        </div>
+		    </div><!--.container-with-side-->
+		</footer><!--.site-footer-->
+	</div><!--.page-->
+
+	<script src="./asset/js/vendor/lightgallery.min.js"></script>
+	<script src="./asset/js/app.js" type="module"></script>
+	
+	    <script
+	        src="./asset/js/pages/main/index.js"
+	        type="module"
+	    ></script>
+</body>
+</html>

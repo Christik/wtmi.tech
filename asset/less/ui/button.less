@@ -1,0 +1,116 @@
+/*=========================
+  Button
+===========================*/
+
+@button-height: 8rem;
+@button-height-s: 4rem;
+@button-transition-duration: .3s;
+
+.button {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  height: @button-height;
+  border: none;
+  border-radius: 1000px;
+  background: @accent-bg-color;
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: @primary-text-color;
+  text-shadow: 1px 1px @inverted-text-color;
+  cursor: pointer;
+
+  .overflow-radius();
+
+  &[disabled] {
+    pointer-events: none;
+    opacity: .5;
+  }
+}
+
+.button__front,
+.button__hover {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: inherit;
+  padding: 0 calc(@button-height / 2);
+}
+
+.button__hover {
+  color: @inverted-text-color;
+  text-shadow: 1px 1px @primary-text-color;
+}
+
+/*=========================
+  Secondary
+===========================*/
+
+.button--secondary {
+  background-color: @link-color;
+  text-shadow: none;
+  color: @inverted-text-color;
+}
+
+/*=========================
+  Sizes
+===========================*/
+
+.button--size-s {
+  height: @button-height-s;
+
+  .button__front,
+  .button__hover {
+    padding-left: calc(@button-height-s / 2);
+    padding-right: calc(@button-height-s / 2);
+  }
+  }
+
+/*=========================
+  Block
+===========================*/
+
+.button--block {
+  display: block;
+  width: 100%;
+}
+
+/*=========================
+  Hover
+===========================*/
+
+@media (hover: hover) {
+  .button {
+    &::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 100%;
+      display: block;
+      transform: translateX(-50%);
+      width: 150%;
+      height: 300%;
+      border-radius: 100%;
+      background: @inverted-bg-color;
+      transition: transform @button-transition-duration;
+    }
+  }
+
+  .button__front,
+  .button__hover {
+    transition: transform @button-transition-duration;
+  }
+
+  .button:hover {
+    &::before {
+      transform: translate(-50%, -50%);
+    }
+
+    .button__front,
+    .button__hover {
+      transform: translateY(-100%);
+    }
+  }
+}

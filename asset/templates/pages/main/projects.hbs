@@ -1,0 +1,35 @@
+<section class="projects-section">
+  <div class="container-with-side">
+    <div class="projects-section__header">
+      <h2 class="projects-section__title">
+        Наши проекты
+      </h2>
+
+      <div class="project-slider-nav">
+        <button
+          class="project-slider-nav__prev arrow-button arrow-button--prev"
+          type="button"
+        >
+          Назад
+        </button>
+
+        <button
+          class="project-slider-nav__next arrow-button arrow-button--next"
+          type="button"
+        >
+          Вперед
+        </button>
+
+        <div class="project-slider-nav__counter">
+          <span data-current>00</span>
+          /
+          <span data-total>00</span>
+        </div>
+      </div><!--.project-slider-nav-->
+    </div><!--.projects-section__header-->
+  </div><!--.container-with-side-->
+
+  <div class="projects-section__slider">
+    {{> pages/main/components/project-slider project_slider }}
+  </div><!--.projects-section__slider-->
+</section><!--.projects-section-->

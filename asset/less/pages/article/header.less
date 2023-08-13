@@ -1,0 +1,28 @@
+/*=========================
+  Article header
+===========================*/
+
+.article-header {
+  &:extend(.section);
+
+  display: flex;
+  align-items: flex-end;
+  padding: 8rem 0;
+  color: @inverted-text-color;
+
+  @media @desktop { min-height: 37.5vw; }
+
+  @media @toDesktop { padding: 4rem 0; }
+
+  &__bg {
+    position: absolute;
+    left: @side-width;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: no-repeat 50% 50% / cover;
+    pointer-events: none;
+
+    @media  @toDesktop { left: 0; }
+  }
+}

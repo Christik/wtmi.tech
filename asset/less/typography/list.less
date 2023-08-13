@@ -1,0 +1,31 @@
+/*=========================
+  Bullet list
+===========================*/
+
+.bullet-list {
+  &:extend(.base-text);
+
+  li {
+    position: relative;
+
+    @media @toDesktop { margin-left: 3rem; }
+
+    &:not(:first-child) {
+      margin-top: 1.25em;
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: -3rem;
+      top: .7em;
+      transform: translateY(-50%);
+      width: 1rem;
+      height: 1rem;
+      border-radius: 50%;
+      background-color: @secondary-inverted-bg-color;
+    }
+  }
+
+}

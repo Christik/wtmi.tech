@@ -1,0 +1,101 @@
+<header class="mob-header">
+  <div class="container-with-side">
+    <div class="mob-header__in">
+      {{#ifNotEquals page 'index'}}<a href="./">{{/ifNotEquals}}
+        <img
+          class="mob-header__logo lazyload"
+          data-sizes="auto"
+          data-srcset="
+            ./asset/img/site-logo.png 240w,
+            ./asset/img/site-logo@2x.png 480w"
+          alt="Нефтегазовая техника"
+        />
+      {{#ifNotEquals page 'index'}}</a>{{/ifNotEquals}}
+
+      <a class="mob-header__button button button--size-s" href="./order.html">
+        <span class="button__front">Заказать</span>
+        <span class="button__hover">Заказать</span>
+      </a>
+
+      <button class="mob-header__burger burger" type="button">
+        <span>Меню</span>
+      </button>
+    </div><!--.mob-header__in-->
+  </div><!--.container-with-side-->
+</header><!--.mob-header-->
+
+<header class="site-header">
+  <div class="site-header__in">
+    <div class="site-header__logo site-logo">
+      <img
+        class="site-logo__img lazyload"
+        data-sizes="auto"
+        data-srcset="
+          ./asset/img/site-logo.png 240w,
+          ./asset/img/site-logo@2x.png 480w"
+        width="240" height="240"
+        alt="WTMI"
+      />
+      <ul class="site-logo__list">
+        <li><a href="#">中國人</a></li>
+        <li><a href="#" class="active">Русский</a></li>
+        <li><a href="#">English</a></li>
+      </ul>
+      <div class="site-logo__current-lang">Ru</div>
+    </div>
+    <ul class="site-header__menu main-menu">
+      {{#each list }}
+        <li class="main-menu__item">
+          <a
+            class="
+              main-menu__link
+              {{#ifEquals ../page slug }}
+                main-menu__link--active
+              {{/ifEquals}}
+              {{#if subList }}
+                main-menu__link--inactive
+              {{/if}}
+            "
+            href="./{{ slug }}.html"
+          >
+            {{{ title }}}
+          </a>
+
+          {{#if subList }}
+            <ul class="main-menu__sub-list">
+              {{#each subList }}
+                <li>
+                  <a
+                    class="main-menu__sub-link"
+                    href="./{{ slug }}.html"
+                  >
+                    {{ title }}
+                  </a>
+                </li>
+              {{/each}}
+            </ul>
+          {{/if}}
+        </li>
+      {{/each}}
+    </ul><!--.site-header__menu-->
+
+    <section class="site-header__info">
+      <p class="site-header__email">
+        <a href="mailto:info@wtmi.tech">
+          info@wtmi.tech
+        </a>
+      </p>
+
+      <p class="site-header__phone">
+        <a href="tel:+868765432000">
+          +86 876 5432 000
+        </a>
+      </p>
+    </section><!--.site-header__info-->
+
+    <a class="site-header__button button" href="./order.html">
+      <span class="button__front">Оставить заявку</span>
+      <span class="button__hover">Оставить заявку</span>
+    </a>
+  </div><!--.site-header__in-->
+</header><!--.site-header-->

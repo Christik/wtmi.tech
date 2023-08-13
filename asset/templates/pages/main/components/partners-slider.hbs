@@ -1,0 +1,41 @@
+<div class="partners-slider">
+  <div class="partners-slider__in">
+    <div class="partners-slider__wrapper swiper-wrapper">
+      {{#each list}}
+        <div class="partners-slider__slide swiper-slide">
+          <article class="partner-card">
+            <div class="partner-card__logo">
+              <img
+                class="lazyload"
+                data-src="./asset/img/partners/{{ logo }}.svg"
+                alt="{{ title }}"
+              />
+            </div>
+            <p class="partner-card__title">
+              {{ title }}
+            </p>
+            <p class="partner-card__text">
+              {{ text }}
+            </p>
+          </article>
+        </div><!--.partners-slider__slide-->
+      {{/each}}
+    </div><!--.partners-slider__wrapper-->
+  </div><!--.partners-slider__in-->
+
+  <div class="partners-slider__nav">
+    <button
+      class="partners-slider__prev arrow-button arrow-button--prev"
+      type="button"
+    >
+      Назад
+    </button>
+
+    <button
+      class="partners-slider__next arrow-button arrow-button--next"
+      type="button"
+    >
+      Вперед
+    </button>
+  </div><!--.partners-slider__nav-->
+</div><!--.partners-slider-->

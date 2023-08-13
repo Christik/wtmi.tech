@@ -1,0 +1,60 @@
+/*=========================
+  Burger
+===========================*/
+
+.burger {
+  position: relative;
+  width: @mob-header-height;
+  height: @mob-header-height;
+  border: none;
+  background: none;
+  overflow: hidden;
+
+  span,
+  &::before,
+  &::after {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: @primary-text-color;
+    width: 3.2rem;
+    height: .5rem;
+    transition: opacity .3s, transform .3s;
+  }
+
+  span {
+    overflow: hidden;
+    text-indent: -1000px;
+  }
+
+  &::before, &::after { content: ''; }
+
+  &::before {
+    transform: translate(-50%, -250%);
+  }
+
+  &::after {
+    transform: translate(-50%, 150%);
+  }
+}
+
+/*=========================
+  Opened
+===========================*/
+
+.burger--opened {
+  span {
+    opacity: 0;
+    transform: translate(100%, -50%);
+  }
+
+  &::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+}
+

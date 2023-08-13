@@ -1,0 +1,50 @@
+{
+  "list": [
+    {
+      "slug": "index",
+      "title": "Главная"
+    },
+    {
+      "slug": "services",
+      "title": "Виды деятельности",
+      "subList": [
+        {
+          "slug": "inspection",
+          "title": "Инспекция продукции на производстве"
+        },
+        {
+          "slug": "expedating",
+          "title": "Экспедайтинг"
+        },
+        {
+          "slug": "survey-control",
+          "title": "Сюрвейрский контроль"
+        },
+        {
+          "slug": "certification",
+          "title": "Освидетельствование продукции"
+        },
+        {
+          "slug": "input-control",
+          "title": "Входной контроль"
+        },
+        {
+          "slug": "laboratory",
+          "title": "Лаборатория неразрушающего контроля"
+        }
+      ]
+    },
+    {
+      "slug": "about",
+      "title": "О компании"
+    },
+    {
+      "slug": "career",
+      "title": "Карьера и вакансии"
+    },
+    {
+      "slug": "contacts",
+      "title": "Контакты"
+    }
+  ]
+}

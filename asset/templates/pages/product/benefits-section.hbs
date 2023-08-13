@@ -1,0 +1,19 @@
+{{#if this.benefitList }}
+
+<section class="product-benefits-section">
+  <div class="container-with-side">
+    <h2 class="product-benefits-section__title">
+      Преимущества:
+    </h2>
+
+    <ul class="product-benefits-section__list">
+      {{#each this.benefitList }}
+        <li>
+          {{{ this }}}
+        </li>
+      {{/each}}
+    </ul>
+  </div><!--.container-with-side-->
+</section><!--.product-benefits-section-->
+
+{{/if}}

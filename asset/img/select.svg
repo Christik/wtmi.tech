@@ -1,0 +1,19 @@
+<svg id="Группа_2" data-name="Группа 2" xmlns="http://www.w3.org/2000/svg" width="119.5" height="119.5" viewBox="0 0 119.5 119.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #b3b8c5;
+      }
+    </style>
+  </defs>
+  <path id="Прямоугольник_1" data-name="Прямоугольник 1" class="cls-1" d="M801,735H920.51V854.51H801V735Z" transform="translate(-801 -735)"/>
+  <path id="Rectangle_8_copy" data-name="Rectangle 8 copy" class="cls-2" d="M876.117,791.356l-15.289,15.289-15.289-15.289h30.578Z" transform="translate(-801 -735)"/>
+</svg>

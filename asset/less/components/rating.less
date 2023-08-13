@@ -1,0 +1,20 @@
+/*=========================
+  Rating
+===========================*/
+
+.rating {
+  display: flex;
+  gap: 1.2rem;
+
+  &__item {
+    width: 2.6rem;
+    height: 2.6rem;
+    background: url('@{img-path}/rating.svg') no-repeat 50% 50% / contain;
+    opacity: .2;
+
+    &--active {
+      background-image: url('@{img-path}/rating-active.svg');
+      opacity: 1;
+    }
+  }
+}

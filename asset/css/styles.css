@@ -268,6 +268,13 @@ a {
 /*=========================
   Bebas Neue
 ===========================*/
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('../fonts/subset-BebasNeueRegular.woff2') format('woff2'), url('../fonts/subset-BebasNeueRegular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 /*=========================
   Caption
 ===========================*/
@@ -1796,32 +1803,81 @@ textarea.form-field {
 /*=========================
   Promo section
 ===========================*/
+.promo-section {
+  padding: 0;
+}
 @media (min-width: 1024px) {
   .promo-section {
-    overflow: hidden;
-    padding-top: 14rem;
+    padding-left: 36rem;
   }
 }
-.promo-section__content {
+/*=========================
+  Promo slider
+===========================*/
+.promo-slider {
+  position: relative;
+}
+.promo-slider__in {
+  overflow: hidden;
+}
+.promo-slider__slide {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (min-width: 1024px) {
+  .promo-slider__slide {
+    padding: 8rem 14rem 14rem 0;
+    min-height: 37vw;
+  }
+}
+@media (max-width: 1023.9px) {
+  .promo-slider__slide {
+    padding: 4rem 2rem 8rem;
+  }
+}
+.promo-slider__content {
   position: relative;
   z-index: 3;
 }
 @media (min-width: 1024px) {
-  .promo-section__content {
+  .promo-slider__content {
     width: 53rem;
     margin-left: auto;
   }
 }
-.promo-section__man {
+.promo-slider__man {
   display: block;
   position: absolute;
-  left: calc(calc(36rem + 12rem) + 2rem);
+  left: calc(12rem + 2rem);
   bottom: -6rem;
   width: 58rem;
 }
 @media (max-width: 1023.9px) {
-  .promo-section__man {
+  .promo-slider__man {
     display: none;
+  }
+}
+.promo-slider__pagination {
+  position: absolute;
+}
+@media (min-width: 1024px) {
+  .promo-slider__pagination {
+    width: 53rem;
+    bottom: 8rem;
+    right: 14rem;
+  }
+}
+@media (max-width: 1023.9px) {
+  .promo-slider__pagination {
+    width: 100%;
+    padding: 0 2rem;
+    bottom: 3rem;
+    left: 0;
   }
 }
 /*=========================

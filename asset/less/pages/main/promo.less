@@ -4,10 +4,35 @@
 
 .promo-section {
   &:extend(.section);
+  padding: 0;
 
-  @media @desktop {
+  @media @desktop { padding-left: @side-width; }
+}
+
+/*=========================
+  Promo slider
+===========================*/
+
+.promo-slider {
+  position: relative;
+
+  &__in {
     overflow: hidden;
-    padding-top: 14rem;
+  }
+
+  &__slide {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    @media @desktop {
+      padding: 8rem @container-padding-right 14rem 0;
+      min-height: 37vw;
+    }
+
+    @media @toDesktop {
+      padding: 4rem @mob-container-padding 8rem;
+    }
   }
 
   &__content {
@@ -23,10 +48,27 @@
   &__man {
     display: block;
     position: absolute;
-    left: calc(@container-padding-left + 2rem);
+    left: calc(@container-inner-padding-left + 2rem);
     bottom: -6rem;
     width: 58rem;
 
     @media @toDesktop { display: none; }
+  }
+
+  &__pagination {
+    position: absolute;
+
+    @media @desktop {
+      width: 53rem;
+      bottom: 8rem;
+      right: @container-padding-right;
+    }
+
+    @media @toDesktop {
+      width: 100%;
+      padding: 0 @mob-container-padding;
+      bottom: 3rem;
+      left: 0;
+    }
   }
 }
